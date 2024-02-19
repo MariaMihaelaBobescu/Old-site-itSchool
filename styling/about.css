@@ -1,0 +1,200 @@
+:root {
+  --background-primary: #141e4c;
+  --background-secondary: #dfedf5;
+  --background-dark: #101d42;
+  --background-light: #ffffff;
+  --text-primary: #101d42;
+  --text-secondary: #fbb44c;
+  --text-dark: #2b2922;
+  --text-light: #eaeaea;
+  --text-white: #ffffff;
+  --button-color: #2bb686;
+  --fs-large: 1rem;
+  --fs-medium: 0.875rem;
+  --fs-small: 0.75rem;
+  --spacing-xl: 2.625rem;
+  --spacing-large: 1.75rem;
+  --spacing-medium: 1rem;
+  --spacing-small: 0.5rem;
+  --spacing-tiny: 0.25rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body,h1,h2,h3,p,ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav section styling */
+
+nav img {
+  width: auto;
+  height: 60px;
+}
+
+nav {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  background-color: var(--background-primary);
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  min-width: 320px;
+  margin: auto;
+  padding: var(--spacing-medium);
+}
+
+.pages a:hover {
+  color: var(--text-secondary);
+}
+
+.pages span {
+  position: relative;
+  font-size: var(--fs-large);
+  top: var(--spacing-tiny);
+}
+
+.pages a {
+  color: var(--text-light);
+  padding: var(--spacing-medium);
+  text-decoration: none;
+  font-size: var(--fs-small);
+  text-transform: uppercase;
+}
+
+.drop-down-menu {
+  display: none;
+  position: absolute;
+  background-color: var(--background-dark);
+  z-index: 3;
+}
+
+nav .about:hover .drop-down-menu {
+  display: grid;
+}
+
+.pages li {
+  position: relative;
+}
+
+.pages {
+  display: flex;
+  list-style: none;
+}
+
+/* Title section styling */
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  color: var(--text-white);
+  background-color: var(--background-primary);
+}
+
+.title h1 {
+  font-size: 3.5rem;
+}
+
+/* Trainers section styling */
+
+.trainers {
+  padding: var(--spacing-medium) var(--spacing-small);
+  max-width: 1200px;
+  min-width: 320px;
+  margin: auto;
+  color: var(--text-primary);
+}
+
+.container-trainers {
+  padding-bottom: var(--spacing-large);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.trainer-wrapper {
+  width: 25%;
+  padding: 0 var(--spacing-small);
+}
+
+.trainer {
+  width: 100%;
+  min-height: 350px;
+  padding: var(--spacing-small);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: calc(2 * var(--spacing-xl));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trainer .image-wrapper {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -70px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.trainer h3 {
+  width: 100%;
+  font-size: var(--fs-large);
+  color: var(--text-secondary);
+  font-weight: 400;
+  text-align: center;
+  background-color: rgba(20, 30, 76, 0.9);
+  border-radius: 5px;
+  padding: var(--spacing-tiny) 0;
+  margin-bottom: var(--spacing-medium);
+  margin-top: -25px;
+  z-index: 1;
+}
+.trainer p {
+  color: var(--text-dark);
+  font-size: var(--fs-medium);
+}
+
+/* Footer section styling  */
+
+footer {
+  background-color: var(--background-primary);
+  color: var(--text-light);
+}
+
+.container-footer {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: auto;
+  padding: var(--spacing-medium);
+}
+
+.container-footer p {
+  font-size: var(--fs-small);
+  text-align: center;
+  padding: var(--spacing-medium) 0;
+}

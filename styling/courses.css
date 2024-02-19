@@ -1,0 +1,234 @@
+:root {
+  --background-primary: #141e4c;
+  --background-secondary: #dfedf5;
+  --background-dark: #101d42;
+  --background-light: #ffffff;
+  --text-primary: #101d42;
+  --text-secondary: #fbb44c;
+  --text-dark: #2b2922;
+  --text-light: #eaeaea;
+  --text-white: #ffffff;
+  --button-color: #2bb686;
+  --fs-large: 1rem;
+  --fs-medium: 0.875rem;
+  --fs-small: 0.75rem;
+  --spacing-xl: 2.625rem;
+  --spacing-large: 1.75rem;
+  --spacing-medium: 1rem;
+  --spacing-small: 0.5rem;
+  --spacing-tiny: 0.25rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body,h1,h2,h3,p,ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav section styling */
+
+nav img {
+  width: auto;
+  height: 60px;
+}
+
+nav {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  background-color: var(--background-primary);
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  min-width: 320px;
+  margin: auto;
+  padding: var(--spacing-medium);
+}
+
+.pages a:hover {
+  color: var(--text-secondary);
+}
+
+.pages span {
+  position: relative;
+  font-size: var(--fs-large);
+  top: var(--spacing-tiny);
+}
+
+.pages a {
+  color: var(--text-light);
+  padding: var(--spacing-medium);
+  text-decoration: none;
+  font-size: var(--fs-small);
+  text-transform: uppercase;
+}
+
+.drop-down-menu {
+  display: none;
+  position: absolute;
+  background-color: var(--background-dark);
+  z-index: 3;
+}
+
+nav .about:hover .drop-down-menu {
+  display: grid;
+}
+
+.pages li {
+  position: relative;
+}
+
+.pages {
+  display: flex;
+  list-style: none;
+}
+
+/* Title section styling */
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  color: var(--text-white);
+  background-color: var(--background-primary);
+}
+
+.title h1 {
+  font-size: 3.5rem;
+}
+
+/* Courses section stilying */
+
+.courses-description {
+  padding: var(--spacing-medium) var(--spacing-small);
+  max-width: 1200px;
+  min-width: 320px;
+  margin: auto;
+  color: var(--text-primary);
+}
+
+.courses-description h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin: var(--spacing-large) 0;
+}
+
+.courses-description .main-paragraph {
+  text-align: center;
+  margin-left: var(--spacing-small);
+  margin-right: var(--spacing-small);
+  margin-bottom: var(--spacing-large);
+  font-size: var(--fs-medium);
+  color: var(--text-dark);
+}
+
+.courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-large);
+}
+
+.course-wrapper {
+  width: calc(100% / 3);
+  padding-right: var(--spacing-small);
+  padding-left: var(--spacing-small);
+}
+
+.course {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: var(--spacing-tiny);
+}
+
+.course img {
+  width: 100%;
+  height: auto;
+  margin-bottom: var(--spacing-large);
+}
+
+.content, .duration-months, .duration-hours {
+  margin-left: var(--spacing-small);
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-medium);
+}
+
+.courses-description .certification  {
+  color: #666;
+  font-size: var(--fs-medium);
+}
+
+.certification  .microsoft-logo {
+  width: 80px;
+  height: auto;
+  vertical-align: text-top;
+  margin-left: var(--spacing-small);
+}
+
+.details {
+  margin-bottom: var(--spacing-medium);
+}
+
+.details span {
+  font-size: var(--fs-medium);
+  color: #666;
+}
+
+.details .material-icons {
+  vertical-align: middle;
+}
+
+.content a {
+  font-size: var(--fs-medium);
+  text-align: center;
+  color: var(--text-white);
+  background-color: var(--button-color);
+  border: 1px solid var(--button-color);
+  border-radius: 5px;
+  padding: var(--spacing-tiny);
+  width: 100px;
+  margin-bottom: var(--spacing-medium);
+  display: block;
+  text-decoration: none;
+}
+
+
+/* Footer section styling  */
+
+footer {
+  background-color: var(--background-primary);
+  color: var(--text-light);
+}
+
+.container-footer {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: auto;
+  padding: var(--spacing-medium);
+}
+
+.container-footer p {
+  font-size: var(--fs-small);
+  text-align: center;
+  padding: var(--spacing-medium) 0;
+}
